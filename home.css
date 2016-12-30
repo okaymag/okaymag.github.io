@@ -1,14 +1,14 @@
-#items{
+#items {
     overflow-x: scroll;
     width: auto;
     /*width: 25vw;*/
     white-space: nowrap;
 }
-.items  {
+.items {
   width: 35vw;
   padding-left: 20%;
 }
-body  {
+body {
   width: 100%;
 }
 
