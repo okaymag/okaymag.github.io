@@ -1,0 +1,36 @@
+#items{
+    overflow-x: scroll;
+    width: auto;
+    /*width: 25vw;*/
+    white-space: nowrap;
+}
+.items  {
+  width: 35vw;
+  padding-left: 20%;
+}
+body  {
+  width: 100%;
+}
+
+
+/* \-----\ \----\ \---\ \--\ \-\ OLD /-/ /--/ /---/ /----/ /-----/ */
+
+.sidebarItem {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Optima;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(149, 190, 208);
+}
+a {
+  /*color: black;*/
+  color: rgb(149, 190, 208);
+  text-decoration: none;
+}
+.title  {
+  width: 100%;
+  padding-right: 0%;
+}

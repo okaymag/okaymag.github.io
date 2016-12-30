@@ -1,0 +1,49 @@
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0%;
+  padding-bottom: 10%;
+}
+
+html {
+  /*background-color: rgb(255, 186, 208);*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: -webkit-linear-gradient(rgb(255, 186, 208), rgb(252, 255, 167)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(255, 186, 208), rgb(252, 255, 167)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(255, 186, 208), rgb(252, 255, 167)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(255, 186, 208), rgb(252, 255, 167)); /* Standard syntax */
+}
+
+.sidebarItem {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: Optima;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgb(149, 190, 208);
+
+}
+a {
+  /*color: black;*/
+  color: rgb(149, 190, 208);
+  text-decoration: none;
+}
+.R_Arrow {
+  font-size: 30px;
+  padding-left: 0%;
+}
+
+.about  {
+  font-size: 20pt;
+  font-family: Optima;
+  color: rgb(96, 149, 170);
+}
+.title  {
+  width: 90%;
+
+}
