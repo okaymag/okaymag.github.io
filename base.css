@@ -19,11 +19,13 @@ html, body {
     border: 1px solid black;
     margin-left: 50px;
     margin-right: 50px;
-    transition: width 1s, height 1s;
+    transition: width .7s, height .7s;
+    -webkit-transition: width .7s, height .7s
 }
 
 .issue_cover:hover {
     border: 1px dotted black;
-    transition: width 1s, height 1s;
     height: 22%
+    transition: width .7s, height .7s;
+    -webkit-transition: width .7s, height .7s
 }
