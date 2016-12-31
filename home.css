@@ -1,7 +1,6 @@
 #items {
     overflow-x: scroll;
     width: auto;
-    /*width: 25vw;*/
     white-space: nowrap;
 }
 .items {
@@ -11,7 +10,13 @@
 body {
   width: 100%;
 }
-
+#cover {
+    outline: 1px solid black;
+    padding-left: 0%;
+}
+#sidebar {
+    padding-right: 20%;
+}
 
 /* \-----\ \----\ \---\ \--\ \-\ OLD /-/ /--/ /---/ /----/ /-----/ */
 
