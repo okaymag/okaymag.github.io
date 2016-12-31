@@ -1,14 +1,20 @@
+/* attempt at centering the issue list in the middle of the browser window */
+#issue_list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -290px; /* compensate for width of issue list */
+    margin-top: -150px; /* compensate for height of issue list */
+}
+
+/* format the text under each issue cover */
 #issue_list tr td a {
     text-align: center;
     font-family: monospace;
     color: black;
 }
 
-#issue_list {
-    margin: 0px auto;
-    margin-top: 150px;
-}
-
+/* format and animate the issue covers */
 .issue_cover {
     margin-left: 50px;
     margin-right: 50px;
@@ -18,7 +24,7 @@
     transition: width 1s, height 1s;
 }
 
+/* make the issue cover bigger if the user is hovering over it */
 .issue_cover:hover {
-    border: 1px solid black;
     height: 270px;
 }
