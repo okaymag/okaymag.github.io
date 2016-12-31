@@ -3,7 +3,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -290px; /* compensate for width of issue list */
+    margin-left: -530px; /* compensate for width of issue list */
     margin-top: -150px; /* compensate for height of issue list */
 }
 
