@@ -1,0 +1,51 @@
+/* set default font and font color */
+* {
+    font-family: monospace;
+    color: black;
+}
+
+/* make sure html/body takes up full height of browser */
+html, body {
+   height: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+
+/* set common attributes for sidebar and pages */
+#sidebar, #pages {
+   display: inline-block;
+   margin: 0px;
+   padding: 0px;
+   position: relative;
+}
+
+/* set sidebar attributes */
+#sidebar {
+   margin-left: 50px;
+   margin-right: 50px;
+   border: 1px solid black;
+   padding: 2px;
+}
+
+#sidebar * {
+   display: block;
+}
+
+/* set attributes for pages */
+#pages {
+   top: 50%;
+   margin-top: -320px;
+}
+
+#pages * {
+   display: block;
+}
+
+.page {
+   height: 600px;
+   border: 1px solid black;
+}
+
+.caption {
+   text-align: center;
+}
