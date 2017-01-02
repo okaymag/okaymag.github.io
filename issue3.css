@@ -30,6 +30,7 @@ html, body {
 
 #menu * {
    display: block;
+   padding: 3px;
 }
 
 /* set attributes for pages */
