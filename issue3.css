@@ -2,6 +2,7 @@
 * {
     font-family: monospace;
     color: black;
+    font-size: 14px;
 }
 
 /* make sure html/body takes up full height of browser */
@@ -12,7 +13,7 @@ html, body {
 }
 
 /* set common attributes for sidebar and pages */
-#sidebar, #pages {
+#menu, #pages {
    display: inline-block;
    margin: 0px;
    padding: 0px;
@@ -20,14 +21,14 @@ html, body {
 }
 
 /* set sidebar attributes */
-#sidebar {
+#menu {
    margin-left: 50px;
    margin-right: 50px;
-   border: 1px solid black;
-   padding: 2px;
+   border: 1px dotted rgb(200, 150, 150);
+   padding: 5px;
 }
 
-#sidebar * {
+#menu * {
    display: block;
 }
 
