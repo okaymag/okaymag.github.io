@@ -23,9 +23,11 @@ html, body {
 /* set sidebar attributes */
 #menu {
    position: absolute;
-   top: 10px;
+   top: 50%;
+   margin-top: -60px;
    left: 10px;
    padding: 5px;
+   border: 2px dotted rgb(200, 150, 150);
 }
 
 #menu * {
