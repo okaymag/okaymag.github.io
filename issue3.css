@@ -13,19 +13,19 @@ html, body {
 }
 
 /* set common attributes for sidebar and pages */
-#menu, #pages {
+#pages {
    display: inline-block;
    margin: 0px;
    padding: 0px;
-   position: relative;
+   position: absolute;
 }
 
 /* set sidebar attributes */
 #menu {
-   margin-left: 50px;
-   margin-right: 50px;
-   border: 1px dotted rgb(200, 150, 150);
-   padding: 2px;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   padding: 5px;
 }
 
 #menu * {
@@ -37,6 +37,7 @@ html, body {
 #pages {
    top: 50%;
    margin-top: -320px;
+   margin-left: 110px;
    overflow-x: scroll;
    white-space: nowrap;
 }
