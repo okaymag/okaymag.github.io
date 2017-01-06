@@ -37,10 +37,12 @@ html, body {
 #pages {
    top: 50%;
    margin-top: -320px;
+   overflow-x: scroll;
+   white-space: nowrap;
 }
 
 #pages * {
-   display: block;
+   display: inline-block;
 }
 
 .page {
