@@ -51,12 +51,8 @@ html, body {
 .page {
    height: 600px;
    border: 1px solid black;
-   -webkit-transition: width 1s, height 1s;
-   transition: width 1s, height 1s;
-}
-
-.page:hover {
-   height: 610px;
+   -webkit-transition: all 1s;
+   transition: all 1s;
 }
 
 .caption {
