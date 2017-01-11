@@ -50,9 +50,12 @@ html, body {
 
 .page {
    height: 600px;
-   border: 1px solid black;
    -webkit-transition: all 1s;
    transition: all 1s;
+}
+
+.outlined {
+   border: 1px solid black;
 }
 
 .caption {
