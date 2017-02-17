@@ -40,7 +40,6 @@ html, body {
    top: 50%;
    margin-top: -320px;
    margin-left: 110px;
-   overflow-x: scroll;
    white-space: nowrap;
 }
 
