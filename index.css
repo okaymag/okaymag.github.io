@@ -11,6 +11,7 @@ html, body {
    height: 100%;
    margin: 0px;
    padding: 0px;
+   background-color: rgb(255, 92, 0);
 }
 
 /* attempt at centering the issue list in the middle of the browser window */
