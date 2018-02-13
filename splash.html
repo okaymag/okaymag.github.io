@@ -1,39 +1,73 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<title>OKAY MAG</title>
-<head>
-   <link rel="icon" href="../icon.png?">
-   <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-<!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+<title>
+  OKAY MAG
+</title>
+
+
 <head>
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" type="text/css" href="issue2.css">
   <link rel="stylesheet" type="text/css" href="css/sidebar-header.css">
-
 </head>
 <body>
-<div id="header"><center><a href="index.html"><img src="media/allaboutlove/okaymagtitle-06.jpg" height="50"></a></center></div>
+  <div id="header"><center><a href="index.html"><img src="media/allaboutlove/okaymagtitle-06.jpg" height="50"></a></center></div>
 <div id="parent">
     <div id="sidebar">
-            <p class="sidebarItem"><a href="splash.html">HOME</a></a><br>
+            <p class="sidebarItem"><a href="index.html">HOME</a></a><br>
             <p class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">INSTA</a></a><br>
               <!--modal-->
 
             <p class="sidebarItem"><a id="issues-button" onclick="var menu=document.getElementById('issues-menu');if(menu.style.maxHeight=='200px'){menu.style.maxHeight=0} else{menu.style.maxHeight='200px'}">ISSUES</a></p>
           <div id="issues-menu">
             <table width="100%" id="issue-items">
-              <td><a href="allaboutlove.html"><image src= "media/allaboutlove/17607.jpg" class ="issue-items"><p class="issue-title">all about love</p></a></td>
               <td><a href="issue3.html"><image src= "media/issue_3/playlist.jpg" class ="issue-items"><p class="issue-title">issue 3</p></a></td>
               <td><a href="issue2.html"><image src= "media/misc/covers/issue2_cover.jpg" class ="issue-items"><p class="issue-title">issue 2</p></a></td>
               <td><a href="issue1.html"><image src= "media/misc/covers/issue1_cover.jpg" class ="issue-items"><p class="issue-title">issue 1</p></a></td>
             </table>
           </div>
-
-
             
     </div>
+
+<table width="100%">
+
+   <td>
+      <div class="timer-container">
+         <img src="media/allaboutlove/bell hooks splash page-01.png" width="100%" height="100%" id="splash"></div>
+      <div class= "timer">
+<p id="demo"><p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 18, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script></div></td>
+</table>
+</div>
 
 <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
 </body>

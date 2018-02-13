@@ -59,8 +59,28 @@ p.aboutDiscussion {
   text-transform: uppercase;
   color: rgb(149, 190, 208);
 }
+/* SPLASH PAGE
+__________________________________________________*/
+p#demo {
+  text-align: center;
+  font-size: 60px;
+  margin-top:0px;
+  color: white;
+  font-family: monospace;
+}
 
+.timer-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
+.timer {
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* Drop down issues menu
 __________________________________________________*/
 

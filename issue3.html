@@ -3,143 +3,79 @@
 <title>OKAY MAG</title>
 <head>
     <link rel="icon" href="icon.png">
-    <link rel="stylesheet" type="text/css" href="issue3.css">
+    <link rel="stylesheet" type="text/css" href="issue2.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar-header.css">
 </head>
 <body>
 <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+<div id="header"><center><a href="index.html"><img src="media/allaboutlove/okaymagtitle-06.jpg" height="50"></a></center></div>
+<div id="parent">
+    <div id="sidebar">
+            <p class="sidebarItem"><a href="splash.html">HOME</a></a><br>
+            <p class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">INSTA</a></a><br>
+              <!--modal-->
 
-<div id="menu">
-    <a href="index.html">Home</a>
-    <a href="https://instagram.com/okaymag/">Insta</a>
-    <a href="http://okaymagazine.tumblr.com/">Tumblr</a>
-</div>
-
-<div id="pages">
-
-    <figure>
-        <img src="media/issue_3/Eva 1.png" class="page outlined"/>
-        <br>
-        <span class="caption">by Eva Moolchan</span>
-    </figure>
-
-
-    <figure>
-        <img src="media/issue_3/playlist.jpg" class="page outlined"/>
-        <br>
-        <span class="caption">by Cecelia Halle</span>
-    </figure>
-
-
-    <figure>
-        <img src="media/issue_3/Grey Ellis 1.jpg" class="page"/>
-        <br>
-        <span class="caption">Writing by Grey Ellis, Design by Klara</span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Grey Ellis 2.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Grey Ellis 3.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Grey Ellis 4.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
+            <p class="sidebarItem"><a id="issues-button" onclick="var menu=document.getElementById('issues-menu');if(menu.style.maxHeight=='200px'){menu.style.maxHeight=0} else{menu.style.maxHeight='200px'}">ISSUES</a></p>
+          <div id="issues-menu">
+            <table width="100%" id="issue-items">
+              <td><a href="issue3.html"><image src= "media/issue_3/playlist.jpg" class ="issue-items"><p class="issue-title">issue 3</p></a></td>
+              <td><a href="issue2.html"><image src= "media/misc/covers/issue2_cover.jpg" class ="issue-items"><p class="issue-title">issue 2</p></a></td>
+              <td><a href="issue1.html"><image src= "media/misc/covers/issue1_cover.jpg" class ="issue-items"><p class="issue-title">issue 1</p></a></td>
+            </table>
+          </div>
+          <p class="sidebarItem"><a id="toc-button" onclick="var menu=document.getElementById('toc-menu');if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}">TABLE OF CONTENTS</a></p>
+          <div id="toc-menu">
+            <a href="#eva">EVA MOOLCHAN</p></a>
+            <a href="#playlist">PLAYLIST</p></a>
+            <a href="#grey">GREY ELLIS</p></a>
+            <a href="#bailey">BAILEY RUBY</p></a>
+            <a href="#syd">SYDNEY WHITE</p></a>
+            <a href="#alix">ALIX FLORES</p></a>
+            <a href="#klara">KLARA INGERSOLL</p></a>
+            <a href="#amanda">AMANDA RAY</p></a>
+            <a href="#nancy">NANCY TANG</p></a>
+            <a href="#emma">EMMA HENDRY</p></a>
+          </div>
 
 
-    <figure>
-        <img src="media/issue_3/Bailey descriptions no orange.jpg" class="page"/>
-        <br>
-        <span class="caption">by Bailey Ruby</span>
-    </figure>
+            
+    </div>
 
 
-    <figure>
-        <img src="media/issue_3/syd.jpg" class="page"/>
-        <br>
-        <span class="caption">Writing by Sydney White, Design by Klara</span>
-    </figure>
+<table width="100%" id="items">
+<td><img src="media/issue_3/Eva 1.png" id ="eva" class="items"/>
+<br><center><span class="caption">by Eva Moolchan</span></center></td>
+<td><img src="media/issue_3/playlist.jpg" id ="playlist" class="items"/>
+<br><center><span class="caption">by Ceceilia Halle</span></center></td>
+<td><img src="media/issue_3/Grey Ellis 1.jpg" id ="grey" class="items"/>
+<br><center><span class="caption">Writing by Grey Ellis, Design by Klara</span></center></td>
+<td><img src="media/issue_3/Grey Ellis 2.jpg" class="items"/>
+<td><img src="media/issue_3/Grey Ellis 3.jpg" class="items"/>
+<td><img src="media/issue_3/Grey Ellis 4.jpg" class="items"/>
+<td><img src="media/issue_3/Bailey descriptions no orange.jpg" id ="bailey" class="items"/>
+<br><center><span class="caption">by Bailey Ruby</span></center></td>
+<td><img src="media/issue_3/syd.jpg" id ="syd" class="items"/>
+<br><center><span class="caption">Writing by Sydney White, Design by Klara</span></center></td>
+<td><img src="media/issue_3/take back the night.jpg" id ="alix" class="items"/>
+<br><center><span class="caption">Poster by Alix Flores, Colored by Klara</span></center></td>
+<td><img src="media/issue_3/AntiFascist VDay Dance Party.jpg" id ="klara" class="items"/>
+<br><center><span class="caption">by Klara</span></center></td>
+<td><img src="media/issue_3/Amanda Ray.jpg" id ="amanda" class="items"/>
+<br><center><span class="caption">by Amanda Ray</span></center></td>
+<td><img src="media/issue_3/Nancy Tang 1.jpg" id ="nancy" class="items"/>
+<br><center><span class="caption">Writing by Nancy Tang, Design by Klara</span></center></td>
+<td><img src="media/issue_3/Nancy Tang 2.jpg" class="items"/></td>
+<td><img src="media/issue_3/Emma Hendry 1.jpg" id ="emma" class="items"/>
+<br><center><span class="caption">by Emma Hendry</span></center></td>
+<td><img src="media/issue_3/Emma Hendry 2.jpg" class="items"/></td>
+<td><img src="media/issue_3/Emma Hendry 3.jpg" class="items"/></td>
+<td><img src="media/issue_3/Emma Hendry 4.jpg" class="items"/></td>
+<td><img src="media/issue_3/Emma Hendry 5.jpg" class="items"/></td>
+<td><img src="media/issue_3/Emma Hendry 6.jpg" class="items"/></td>
+<td><img src="media/issue_3/Emma Hendry 7.jpg" class="items"/></td>
+<td><img src="media/issue_3/Emma Hendry 8.jpg" class="items"/></td>
 
-
-    <figure>
-        <img src="media/issue_3/take back the night.jpg" class="page"/>
-        <br>
-        <span class="caption">Poster by Alix Flores, Colored by Klara</span>
-    </figure>
-
-
-    <figure>
-        <img src="media/issue_3/AntiFascist VDay Dance Party.jpg" class="page"/>
-        <br>
-        <span class="caption">by Klara</span>
-    </figure>
-
-
-    <figure>
-        <img src="media/issue_3/Amanda Ray.jpg" class="page outlined"/>
-        <br>
-        <span class="caption">by Amanda Ray</span>
-    </figure>
-
-
-    <figure>
-        <img src="media/issue_3/Nancy Tang 1.jpg" class="page"/>
-        <br>
-        <span class="caption">Writing by Nancy Tang, Design by Klara</span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Nancy Tang 2.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-
-
-    <figure>
-        <img src="media/issue_3/Emma Hendry 1.jpg" class="page"/>
-        <br>
-        <span class="caption">by Emma Hendry</span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Emma Hendry 2.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Emma Hendry 3.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Emma Hendry 4.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Emma Hendry 5.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Emma Hendry 6.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Emma Hendry 7.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-    <figure>
-        <img src="media/issue_3/Emma Hendry 8.jpg" class="page"/>
-        <br>
-        <span class="caption"></span>
-    </figure>
-
+</table>
 </div>
 
 <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->

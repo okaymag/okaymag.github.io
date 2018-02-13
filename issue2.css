@@ -5,7 +5,6 @@
 }
 .items {
   width: 35vw;
-  padding-left: 20%;
 }
 body {
   width: 100%;
@@ -16,6 +15,12 @@ body {
 }
 #sidebar {
     padding-right: 20%;
+}
+
+.caption {
+    font-family: monospace;
+    color: black;
+    font-size: 14px;
 }
 
 /* \-----\ \----\ \---\ \--\ \-\ OLD /-/ /--/ /---/ /----/ /-----/ */
