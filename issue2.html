@@ -11,43 +11,72 @@
 </head>
 
 <body>
-  <table width = 100% id="items">
-    <tr>
-      <td width=40px></td>
-      <td>
-        <table>
-          <tr>
-            <td class="sidebarItem"><a href="index.html">Home<a></td>
-          </tr><tr>
-            <td class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">insta<a></td>
-          </tr><tr>
-            <td class="sidebarItem"><a href="http://okaymagazine.tumblr.com/"target="_blank">tumblr<a></td>
-          </tr>
-        </table>
-      </td>
+  <head>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" type="text/css" href="issue2.css">
+  <link rel="stylesheet" type="text/css" href="css/sidebar-header.css">
 
-      <td><img src="media/issue_2/page 1.jpg" class="items"/></td>
+</head>
+
+<body>
+  <div id="header"><center><a href="index.html"><img src="media/allaboutlove/okaymagtitle-06.jpg" height="50"></a></center></div>
+<div id="parent">
+    <div id="sidebar">
+            <p class="sidebarItem"><a href="index.html">HOME</a></a><br>
+            <p class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">INSTA</a></a><br>
+              <!--modal-->
+
+            <p class="sidebarItem"><a id="issues-button" onclick="var menu=document.getElementById('issues-menu');if(menu.style.maxHeight=='200px'){menu.style.maxHeight=0} else{menu.style.maxHeight='200px'}">ISSUES</a></p>
+          <div id="issues-menu">
+            <table width="100%" id="issue-items">
+              <td><a href="issue3.html"><image src= "media/issue_3/playlist.jpg" class ="issue-items"><p class="issue-title">issue 3</p></a></td>
+              <td><a href="issue2.html"><image src= "media/misc/covers/issue2_cover.jpg" class ="issue-items"><p class="issue-title">issue 2</p></a></td>
+              <td><a href="issue1.html"><image src= "media/misc/covers/issue1_cover.jpg" class ="issue-items"><p class="issue-title">issue 1</p></a></td>
+            </table>
+          </div>
+          <p class="sidebarItem"><a id="toc-button" onclick="var menu=document.getElementById('toc-menu');if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}">TABLE OF CONTENTS</a></p>
+          <div id="toc-menu">
+            <a href="#cover">COVER</p></a>
+            <a href="#intro">INTRO</p></a>
+            <a href="#playlist">PLAYLIST</p></a>
+            <a href="#faye">FAYE ORLOVE</p></a>
+            <a href="#olivia">OLIVIA FENTI</p></a>
+            <a href="#victoria">VICTORIA ZEOLI</p></a>
+            <a href="#kristina">KRISTINA CARRERA</p></a>
+            <a href="#cecelia">CECELIA HALLE</p></a>
+            <a href="#alice">ALICE BLOOMFIELD</p></a>
+            <a href="#maya">MAYA FUHR</p></a>
+            <a href="#bella">BELLA ORTIZ-WREN</p></a>
+            <a href="#caroline">CAROLINE CHANDLER</p></a>
+          </div>
+
+
+            
+    </div>
+<table width="100%" id="items">
+
+      <td><img src="media/issue_2/page 1.jpg" id="cover" class="items"/></td>
       <td><img src="media/issue_2/page 2.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 3.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 4.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 5.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 4.jpg"  class="items"/></td>
+      <td><img src="media/issue_2/page 5.jpg" id="intro" class="items"/></td>
       <td><img src="media/issue_2/page 6.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 7.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 7.jpg" id="playlist" class="items"/></td>
       <td><img src="media/issue_2/page 8.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 9.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 9.jpg" id="faye" class="items"/></td>
       <td><img src="media/issue_2/page 10.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 11.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 12.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 13.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 14.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 15.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 15.jpg" id="olivia" class="items"/></td>
       <td><img src="media/issue_2/page 16.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 17.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 18.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 19.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 20.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 21.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 22.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 22.jpg" id="victoria" class="items"/></td>
       <td><img src="media/issue_2/page 23.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 24.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 25.jpg" class="items"/></td>
@@ -55,28 +84,28 @@
       <td><img src="media/issue_2/page 27.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 28.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 29.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 30.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 30.jpg" id="kristina" class="items"/></td>
       <td><img src="media/issue_2/page 31.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 32.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 33.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 34.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 34.jpg" id="cecelia" class="items"/></td>
       <td><img src="media/issue_2/page 35.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 36.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 37.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 38.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 38.jpg" id="alice" class="items"/></td>
       <td><img src="media/issue_2/page 39.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 40.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 41.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 42.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 42.jpg" id="maya"  class="items"/></td>
       <td><img src="media/issue_2/page 43.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 44.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 45.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 46.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 46.jpg"  id="bella" class="items"/></td>
       <td><img src="media/issue_2/page 47.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 48.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 49.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 50.jpg" class="items"/></td>
-      <td><img src="media/issue_2/page 51.jpg" class="items"/></td>
+      <td><img src="media/issue_2/page 50.jpg" id="caroline" class="items"/></td>
+      <td><img src="media/issue_2/page 51.jpg"   class="items"/></td>
       <td><img src="media/issue_2/page 52.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 53.jpg" class="items"/></td>
       <td><img src="media/issue_2/page 54.jpg" class="items"/></td>
