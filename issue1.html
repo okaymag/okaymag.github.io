@@ -8,41 +8,61 @@
 <head>
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" type="text/css" href="issue2.css">
+  <link rel="stylesheet" type="text/css" href="css/sidebar-header.css">
+
 </head>
 
 <body>
+<div id="header"><center><img src="media/allaboutlove/okaymagtitle-06.jpg" height="50"></center></div>
+<div id="parent">
+    <div id="sidebar">
+            <p class="sidebarItem"><a href="allaboutlove.html">HOME</a></a><br>
+            <p class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">INSTA</a></a><br>
+              <!--modal-->
+
+            <p class="sidebarItem"><a id="issues-button" onclick="var menu=document.getElementById('issues-menu');if(menu.style.maxHeight=='200px'){menu.style.maxHeight=0} else{menu.style.maxHeight='200px'}">ISSUES</a></p>
+          <div id="issues-menu">
+            <table width="100%" id="issue-items">
+              <td><a href="allaboutlove.html"><image src= "media/allaboutlove/17607.jpg" class ="issue-items"><p class="issue-title">all about love</p></a></td>
+              <td><a href="issue3.html"><image src= "media/issue_3/playlist.jpg" class ="issue-items"><p class="issue-title">issue 3</p></a></td>
+              <td><a href="issue2.html"><image src= "media/misc/covers/issue2_cover.jpg" class ="issue-items"><p class="issue-title">issue 2</p></a></td>
+              <td><a href="issue1.html"><image src= "media/misc/covers/issue1_cover.jpg" class ="issue-items"><p class="issue-title">issue 1</p></a></td>
+            </table>
+          </div>
+          <p class="sidebarItem"><a id="toc-button" onclick="var menu=document.getElementById('toc-menu');if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}">TABLE OF CONTENTS</a></p>
+          <div id="toc-menu">
+            <a href="#cover">COVER</p></a>
+            <a href="#intro">INTRO</p></a>
+            <a href="#vinny">VINNY CASTRO</p></a>
+            <a href="#rebecca">REBECCA CUMBERBATCH</p></a>
+            <a href="#olive">OLIVIA WOODWARD</p></a>
+            <a href="#emma">EMMA HENDRY</p></a>
+            <a href="#noah">NOAH ALEXANDER</p></a>
+            <a href="#julia">JULIA SALDAÑA</p></a>
+            <a href="#playlist">PLAYLIST</p></a>
+          </div>
+
+
+            
+    </div>
   <table width = 100% id="items">
-    <tr>
-      <td width=40px></td>
-      <td>
-        <table id="sidebar">
-          <tr>
-            <td><img class="title" src = "media/issue_1/OneOffs_Summer_2015/Title.gif" ></td>
-          </tr><tr>
-            <td class="sidebarItem"><a href="index.html">Home<a></td>
-          </tr><tr>
-            <td class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">insta<a></td>
-          </tr><tr>
-            <td class="sidebarItem"><a href="http://okaymagazine.tumblr.com/"target="_blank">tumblr<a></td>
-          </tr>
-        </table>
-      </td>
+ 
 
       <td><img src="media/issue_1/OkayTitles_Summer_2015/OkayTitle_Yell.jpg" id="cover" class="items"/></td>
-      <td><img src="media/issue_1/OneOffs_Summer_2015/Issue1.jpg" class="items"/></td>
+      <td><img src="media/issue_1/OneOffs_Summer_2015/Issue1.jpg"  class="items"/></td>
       <td><img src="media/issue_1/OneOffs_Summer_2015/Contributors.jpg" class="items"/></td>
       <td><img src="media/issue_1/OneOffs_Summer_2015/EditorsNote.jpg" class="items"/></td>
-      <td><img src="media/issue_1/OneOffs_Summer_2015/EditorsPhoto.jpg" class="items"/></td>
+      <td><img src="media/issue_1/OneOffs_Summer_2015/EditorsPhoto.jpg" id="intro" class="items"/></td>
 
       <td><img src="media/issue_1/Vinny_Castro_Summer_2015/VINNY1.jpg" class="items"/></td>
-      <td><img src="media/issue_1/Vinny_Castro_Summer_2015/VINNY2.jpg" class="items"/></td>
+      <td><img src="media/issue_1/Vinny_Castro_Summer_2015/VINNY2.jpg" id="vinny" class="items"/></td>
       <td><img src="media/issue_1/Vinny_Castro_Summer_2015/VINNY3.jpg" class="items"/></td>
       <td><img src="media/issue_1/Vinny_Castro_Summer_2015/VINNY4.jpg" class="items"/></td>
       <td><img src="media/issue_1/Vinny_Castro_Summer_2015/VinnySelfie.jpg" class="items"/></td>
       <td><img src="media/issue_1/Vinny_Castro_Summer_2015/VinnyInterview.jpg" class="items"/></td>
 
       <td><img src="media/issue_1/Rebecca_Cumberbatch_Summer_2015/REBECCA1.jpg" class="items"/></td>
-      <td><img src="media/issue_1/Rebecca_Cumberbatch_Summer_2015/REBECCA2.jpg" class="items"/></td>
+      <td><img src="media/issue_1/Rebecca_Cumberbatch_Summer_2015/REBECCA2.jpg" id="rebecca" class="items"/></td>
       <td><img src="media/issue_1/Rebecca_Cumberbatch_Summer_2015/REBECCA3.jpg" class="items"/></td>
       <td><img src="media/issue_1/Rebecca_Cumberbatch_Summer_2015/REBECCA4.jpg" class="items"/></td>
       <td><img src="media/issue_1/Rebecca_Cumberbatch_Summer_2015/REBECCA5.jpg" class="items"/></td>
@@ -51,7 +71,7 @@
       <td><img src="media/issue_1/Rebecca_Cumberbatch_Summer_2015/RebeccaInterview.jpg" class="items"/></td>
 
       <td><img src="media/issue_1/Olivia_Woodward_Summer_2015/OLIVIA1.jpg" class="items"/></td>
-      <td><img src="media/issue_1/Olivia_Woodward_Summer_2015/OLIVIA2.jpg" class="items"/></td>
+      <td><img src="media/issue_1/Olivia_Woodward_Summer_2015/OLIVIA2.jpg" id="olive" class="items"/></td>
       <td><img src="media/issue_1/Olivia_Woodward_Summer_2015/OLIVIA3.jpg" class="items"/></td>
       <td><img src="media/issue_1/Olivia_Woodward_Summer_2015/OLIVIA4.jpg" class="items"/></td>
       <td><img src="media/issue_1/Olivia_Woodward_Summer_2015/OLIVIA5.jpg" class="items"/></td>
@@ -60,7 +80,7 @@
       <td><img src="media/issue_1/Olivia_Woodward_Summer_2015/OliviaInterview.jpg" class="items"/></td>
 
       <td><img src="media/issue_1/Emma_Hendry_Summer_2015/EMMA1.jpg" class="items"/></td>
-      <td><img src="media/issue_1/Emma_Hendry_Summer_2015/EMMA2.jpg" class="items"/></td>
+      <td><img src="media/issue_1/Emma_Hendry_Summer_2015/EMMA2.jpg" id="emma" class="items"/></td>
       <td><img src="media/issue_1/Emma_Hendry_Summer_2015/EMMA3.jpg" class="items"/></td>
       <td><img src="media/issue_1/Emma_Hendry_Summer_2015/EMMA4.jpg" class="items"/></td>
       <td><img src="media/issue_1/Emma_Hendry_Summer_2015/EMMA5.jpg" class="items"/></td>
@@ -69,19 +89,19 @@
       <td><img src="media/issue_1/Emma_Hendry_Summer_2015/EmmaInterview.jpg" class="items"/></td>
 
       <td><img src="media/issue_1/Noah_Boskey_Summer_2015/NOAH1.jpg" class="items"/></td>
-      <td><img src="media/issue_1/Noah_Boskey_Summer_2015/NOAH2.jpg" class="items"/></td>
+      <td><img src="media/issue_1/Noah_Boskey_Summer_2015/NOAH2.jpg" id="noah" class="items"/></td>
       <td><img src="media/issue_1/Noah_Boskey_Summer_2015/NoahSelfie.jpg" class="items"/></td>
       <td><img src="media/issue_1/Noah_Boskey_Summer_2015/NoahInterview.jpg" class="items"/></td>
 
       <td><img src="media/issue_1/Julia_Saldana_Summer_2015/JULIA1.jpg" class="items"/></td>
-      <td><img src="media/issue_1/Julia_Saldana_Summer_2015/JULIA2.jpg" class="items"/></td>
+      <td><img src="media/issue_1/Julia_Saldana_Summer_2015/JULIA2.jpg" id="julia" class="items"/></td>
       <td><img src="media/issue_1/Julia_Saldana_Summer_2015/JULIA3.jpg" class="items"/></td>
       <td><img src="media/issue_1/Julia_Saldana_Summer_2015/JULIA4.jpg" class="items"/></td>
       <td><img src="media/issue_1/Julia_Saldana_Summer_2015/JuliaSelfie.jpg" class="items"/></td>
       <td><img src="media/issue_1/Julia_Saldana_Summer_2015/JuliaInterview.jpg" class="items"/></td>
 
       <td><img src="media/issue_1/OneOffs_Summer_2015/Eva_Moolchan_Summer_2015_Playlist.jpg" class="items"/></td>
-      <td><img src="media/issue_1/OneOffs_Summer_2015/Mona_Murayama_Summer_2015_Comic.jpg" class="items"/></td>
+      <td><img src="media/issue_1/OneOffs_Summer_2015/Mona_Murayama_Summer_2015_Comic.jpg" id = "playlist" class="items"/></td>
       <td><img src="media/issue_1/OkayTitles_Summer_2015/BackCover.jpg" class="items"/></td>
 </body>
 </html>

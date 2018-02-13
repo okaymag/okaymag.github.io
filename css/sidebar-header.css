@@ -1,0 +1,117 @@
+/* Sidebar
+__________________________________________________*/
+body {
+    padding: 0;
+    margin: 0;
+}
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: white;
+}
+#sidebar {
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    text-align: center;
+    padding: 100px 0 0 ;
+}
+#parent {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+p.sidebarItem {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: Courier;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(149, 190, 208);
+}
+
+p.resources {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-family: Courier;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgb(149, 190, 208);
+}
+
+
+p.aboutDiscussion {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-family: Courier;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgb(149, 190, 208);
+}
+
+
+/* Drop down issues menu
+__________________________________________________*/
+
+#issues-menu {
+  max-height: 0;
+  overflow: scroll;
+  -webkit-transition: max-height .5s ease-in-out;
+  -moz-transition: max-height .5s ease-in-out;
+  -ms-transition: max-height .5s ease-in-out;
+  -o-transition: max-height .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
+}
+
+
+#issues-button {
+  cursor:pointer;
+}
+
+.issue-items {
+  height:105px;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: height 0.3s ease-in-out;
+}
+
+.issue-items:hover {
+  height: 120px;
+} 
+
+.issue-title {
+  padding-left: 10px;
+  text-align: center;
+  color:#1EAEDB;
+  font-size: 10px;
+  padding-bottom: 15px;
+}
+
+/* Drop down toc
+__________________________________________________*/
+
+#toc-button {
+  cursor:pointer;
+}
+
+#toc-menu {
+  width: 200px;
+  font-size: 10px;
+  display: none;
+  -webkit-transition: max-height .5s ease-in-out;
+  -moz-transition: max-height .5s ease-in-out;
+  -ms-transition: max-height .5s ease-in-out;
+  -o-transition: max-height .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
+}

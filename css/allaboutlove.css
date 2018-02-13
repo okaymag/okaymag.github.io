@@ -1,0 +1,394 @@
+/* setting background colors 
+__________________________________________________*/
+
+body {
+	background-color: #fff;
+}
+
+#header {
+	background-color: transparent;
+}
+
+#header img[src="media/misc/banner.png"]{
+	height: 6vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sidebar-button {
+	position: fixed;
+	top: 2vh;
+	left: 2vw;
+}
+
+#sidebar-button img{
+	height: 3vh;
+	cursor: pointer;
+}
+
+/* icon positions 
+__________________________________________________*/
+
+#icons {
+	width: 100%;
+}
+#brain-icon {
+    position: fixed;
+    top: 30vh;
+    left: 0px;
+    bottom: 0px;
+    width: 33vw;
+    text-align: center;
+}
+
+
+#brain-icon img{
+
+	width: 15vw;
+}
+
+#book-icon {
+	position: fixed;
+    top: 30vh;
+    left: 33vw;
+    bottom: 0px;
+    width: 33vw;
+    text-align: center;
+}
+
+
+#book-icon img[src="media/allaboutlove/book.png"]{
+	width: 12vw;
+}
+
+#arrow-icon {
+	position: fixed;
+    top: 30vh;
+    left: 66vw;
+    bottom: 0px;
+    width: 33vw;
+    text-align: center;
+}
+
+#arrow-icon img{
+	width: 20vw;
+}
+
+/* project description speech bubbles & buttons
+__________________________________________________*/
+
+#trigger-bubble {
+  cursor: pointer;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+	width: 229px;
+	height: 150px;
+	padding: 60px 20px;
+	margin: 1em 0;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+	text-shadow: 0 -.05em .1em rgba(0,0,0,.3);
+}
+
+	.speech-bubble h1 {
+		margin: 0;
+		font-size: 100%;
+		font-family: sniglet;
+	}
+	
+	.speech-bubble h2 {
+		margin: 0;
+		font-size: 40%;
+		font-weight: normal;
+	}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #00aabb;
+	border-top: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-top: -20px;
+}
+
+/* arrow button speech bubble
+__________________________________________________*/
+
+#trigger-arrow {
+  cursor: pointer;
+}
+
+.speech-bubble-arrow {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+	width: 229px;
+	height: 150px;
+	padding: 60px 20px;
+	margin: 1em 0;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+	text-shadow: 0 -.05em .1em rgba(0,0,0,.3);
+	  -webkit-transition: display .5s ease-in-out;
+  -moz-transition: display .5s ease-in-out;
+  -ms-transition: display .5s ease-in-out;
+  -o-transition: display .5s ease-in-out;
+  transition: display .5s ease-in-out;
+}
+
+	.speech-bubble-arrow h1 {
+		margin: 0;
+		font-size: 100%;
+		font-family: sniglet;
+	}
+	
+	.speech-bubble-arrow h2 {
+		margin: 0;
+		font-size: 40%;
+		font-weight: normal;
+	}
+
+.speech-bubble-arrow:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #00aabb;
+	border-top: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-top: -20px;
+}
+
+/* Content popup window
+__________________________________________________*/
+.content-modal {
+	position: fixed;
+	top: 10vh;
+	left: 10vh;
+  width: 80vw;
+  height: 80vh;
+  z-index: 2000;
+  border:1px solid #666;
+  background-color: #ffcc66;
+  opacity: 0.93;
+  display: none;
+  cursor: move;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#trigger-content-popup {
+  cursor: pointer;
+}
+
+a.content-modal-close {
+  font-size: 10px;
+  text-decoration: underline;
+  position: relative;
+  z-index: 2001;
+  float: right;
+  margin: 2px 2px 0 0;
+  cursor: pointer;
+}
+
+/* Content formatting
+__________________________________________________*/
+
+#summary {
+	width: 30vw;
+}
+
+#discussion {
+	width: 38vw;
+}
+
+#questions {
+	width: 38vw;
+}
+
+
+
+/* Drop down issue menu
+__________________________________________________*/
+
+#issues-menu {
+  max-height: 0;
+  overflow: scroll;
+  -webkit-transition: max-height .5s ease-in-out;
+  -moz-transition: max-height .5s ease-in-out;
+  -ms-transition: max-height .5s ease-in-out;
+  -o-transition: max-height .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
+}
+
+#issues-menu.collapsed {
+  max-height:0;
+}
+
+
+#issues-button {
+  cursor:pointer;
+}
+
+.issue-items {
+  height:105px;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: height 0.3s ease-in-out;
+}
+
+.issue-items:hover {
+  height: 120px;
+} 
+
+.issue-title {
+  padding-left: 10px;
+  text-align: center;
+  color:#1EAEDB;
+  font-size: 10px;
+  padding-bottom: 15px;
+}
+
+/* Resource Modal
+__________________________________________________*/
+
+.resource-modal {
+  position: fixed;
+  top: 60px;
+  left: 200px;
+  width: 300px;
+  height: 200px;
+  z-index: 2000;
+  border:1px solid #666;
+  background-color: #ffcc66;
+  opacity: 0.95;
+  display: none;
+  cursor: move;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#trigger-resource-modal {
+  cursor: pointer;
+}
+
+a.resource-modal-close {
+  font-size: 10px;
+  text-decoration: underline;
+  position: relative;
+  z-index: 2001;
+  float: right;
+  margin: 2px 2px 0 0;
+  cursor: pointer;
+}
+
+.resource-modal-content {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 10px;
+}
+
+/* Sidebar
+__________________________________________________*/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Graduate);
+
+html, body {
+margin: 0;
+padding: 0; }
+
+
+.toggle {
+text-decoration: none;
+font-size: 2em;
+color: rgba(0, 0, 0, 0.61);
+-webkit-transition: all 0.15s ease-out 0;
+-moz-transition: all 0.15s ease-out 0;
+transition: all 0.45s ease-out 0;
+position: fixed;
+top: 20px;
+left: 20px;
+z-index: 1;
+cursor: pointer;
+}
+
+.sidebar {
+position: fixed;
+top: 0px;
+bottom: 0px;
+left: -190px;
+-webkit-transition: all 0.15s ease-out 0;
+-moz-transition: all 0.15s ease-out 0;
+transition: all 0.15s ease-out 0;
+width: 8rem;
+padding: 1.5em;
+background: #19C4BC; 
+}
+
+.sidebar ul {
+list-style: none;
+margin: 0;
+padding: 0; 
+}
+
+.sidebar li a {
+color: #fff;
+font-family: 'Graduate';
+text-transform: uppercase;
+font-size: 1.2em;
+margin: 0;
+margin-bottom: 16px;
+cursor: pointer;
+text-decoration: none;
+line-height: 200%;
+}
+
+.sidebar a:hover {
+  color: rgba(0, 0, 0, 0.61); 
+}
+
+#slide:checked + .container .sidebar {
+left: 0px;
+ }
+
+#slide:checked + .container .toggle {
+left: 200px;
+ }
+
+
+#slide {
+display: none; 
+}
+
+
+#parent {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
