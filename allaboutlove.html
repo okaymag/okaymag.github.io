@@ -50,10 +50,40 @@
       </ul>
     </nav>
   </div>
+
+
+<!-- Voice Notes Cloud
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="cloud">
+    <img id= "cloud" src="media/allaboutlove/8BitCloud.png">
+</div>
+
+<div id="voicenotes">
+
+    <div id="amanda">
+      <img class ="emojis" id="amanda-emoji" src="media/allaboutlove/heart.png">
+      <audio id="amanda-sound">
+      <source src="audio/Amanda.mp4" type="audio/mp4">
+      </audio>
+    </div>
+    <div id="lily">
+      <img class ="emojis" id="lily-emoji" src="media/allaboutlove/rainbow-01.png">
+      <audio id="lily-sound">
+        <source src="audio/lily.m4a" type="audio/mp4">
+      </audio>
+    </div>
+    <div id="patrick">
+      <img class ="emojis" id="patrick-emoji" src="media/allaboutlove/heart.png">
+      <audio id="patrick-sound">
+        <source src="audio/patrick.m4a" type="audio/mp4">
+      </audio>
+    </div>
+</div>
+
  <!-- Brain Icon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="brain-icon">
 
-  <div id="brain-icon">
     <a id="trigger-bubble" onclick="var menu=document.getElementById('project-description'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}""><img src="media/allaboutlove/brain.png"></a>
     <div id="project-description" class= "speech-bubble" style="display: none">
       <h1> PROJECT DESCRIPTION </h1>
@@ -62,9 +92,6 @@ Because of this, we didn’t have an institution to ground our learning and teac
 
     </div>
   </div>
-
-
-
 
 
   <!-- Book Icon
@@ -105,5 +132,87 @@ Because of this, we didn’t have an institution to ground our learning and teac
    </div>
 
 </body>
+<script type="text/javascript">
 
+
+  //manually adjust volume of some sounds
+  document.getElementById("lily-sound").volume = .3
+
+
+  var currentAudio;
+  var currentFriend;
+  //dictionary of voices.  keys are names of friends, values are divs containing an emoji and audio file for each friend.
+  var friends = {
+    "amanda": document.getElementById('amanda'),
+    "lily": document.getElementById('lily'),
+    "patrick": document.getElementById('patrick')
+  }
+
+
+  //helper functions
+  var makeOpaque = function(name) {
+    var div = friends[name];
+    var currentEmoji = div.getElementsByTagName('img')[0];
+    currentEmoji.style.opacity = 1;
+  }
+  var makeTransparent = function(name) {
+    var div = friends[name];
+    var currentEmoji = div.getElementsByTagName('img')[0];
+    currentEmoji.style.opacity = .5;
+  }    
+
+
+
+  //function to be triggered on each friend div click.  
+
+  var triggerAudio = function(name){
+
+    //already listening to this friend, so pause.  Now currentFriend is undefined, back to initial state.  
+    if (currentFriend == name) {
+      currentAudio.pause();
+      currentFriend = undefined;
+      currentAudio = undefined;
+
+      //restore friend emojis to default opacity.
+      for(friend in friends) {
+        makeOpaque(friend)
+      }
+
+      return;
+    }
+
+
+    //Otherwise pause currentFriend and move to new Friend (name)
+    //if no audio defined yet, ignore.  Else pause current audio.
+    if (currentAudio){currentAudio.pause()};
+
+    var div = friends[name];
+    currentAudio = div.getElementsByTagName('audio')[0];
+    currentFriend = name;
+    for(friend in friends) {
+      if(friend !== currentFriend){
+        makeTransparent(friend);
+      }
+    }
+    makeOpaque(currentFriend);
+
+    console.log(currentAudio);
+    console.log(name);
+
+    //play current friend from the beginning
+    currentAudio.currentTime = 0;
+    currentAudio.play();
+  }
+
+
+
+
+  //set the onclick event for each friend div, which will handle switching the current audio and opacity of images
+  for(friend in friends) {
+      friends[friend].onclick = triggerAudio.bind(null, friend); 
+  }
+
+
+  
+</script>
 </html>

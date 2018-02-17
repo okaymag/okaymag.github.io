@@ -27,15 +27,65 @@ body {
 	cursor: pointer;
 }
 
-/* icon positions 
+/* voicenote icon formatting
+__________________________________________________*/
+#cloud {
+	position: fixed;
+    top: 6vh;
+    left: 0px;
+    bottom: 25vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#voicenotes {
+	position: fixed;
+    top: 6vh;
+    left: 0px;
+    bottom: 25vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#voicenotes img#amanda-emoji{
+	position: absolute;
+	margin-top: 35vh;
+}
+
+#voicenotes img#patrick-emoji{
+	position: absolute;
+	margin-top: 15vh;
+	margin-left:50vh;
+}
+
+#voicenotes img#lily-emoji{
+	position: absolute;
+	margin-top: 15vh;
+	margin-right:50vh;
+}
+
+#voicenotes img.emojis{
+	width: 6vw;
+	cursor: pointer;
+	z-index: 100;
+	-webkit-transition: opacity .5s ease-in-out;
+  	-moz-transition: opacity .5s ease-in-out;
+  	-ms-transition: opacity .5s ease-in-out;
+  	-o-transition: opacity .5s ease-in-out;
+  	transition: opacity .5s ease-in-out;
+
+}
+
+/* bottom icon positions 
 __________________________________________________*/
 
 #icons {
 	width: 100%;
 }
+
 #brain-icon {
     position: fixed;
-    top: 30vh;
+    top: 75vh;
     left: 0px;
     bottom: 0px;
     width: 33vw;
@@ -50,7 +100,7 @@ __________________________________________________*/
 
 #book-icon {
 	position: fixed;
-    top: 30vh;
+    top: 75vh;
     left: 33vw;
     bottom: 0px;
     width: 33vw;
@@ -64,7 +114,7 @@ __________________________________________________*/
 
 #arrow-icon {
 	position: fixed;
-    top: 30vh;
+    top: 75vh;
     left: 66vw;
     bottom: 0px;
     width: 33vw;
