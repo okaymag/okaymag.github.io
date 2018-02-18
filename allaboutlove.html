@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="css/allaboutlove.css">
 
+
+
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
@@ -37,60 +39,130 @@
     <a href="allaboutlove.html"><img src="media/misc/banner.png" height="50"></a>
   </div>
 
-<input type="checkbox" id="slide" name="" value="" />
-  <div class="container">
-    <label for="slide" class="toggle">☰</label>
-    <nav class="sidebar"> 
-      <ul>
-        <li><a href="#"> Nav1 </a></li>
-        <li><a href="#"> Nav2 </a></li>
-        <li><a href="#"> Nav3 </a></li>
-        <li><a href="#"> Nav4 </a></li>
-        <li><a href="#"> Nav5 </a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-button w3-large"
+  onclick="w3_close()"> &times;</button>
+  <div id="sidebar-allaboutlove">
+            <p class="sidebarItem"><a href="splash.html">HOME</a></a><br>
+            <p class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">INSTA</a></a><br>
+              <!--modal-->
+
+            <p class="sidebarItem"><a id="issues-button" onclick="var menu=document.getElementById('issues-menu');if(menu.style.maxHeight=='200px'){menu.style.maxHeight=0} else{menu.style.maxHeight='200px'}">ISSUES</a></p>
+          <div id="issues-menu">
+            <table width="100%" id="issue-items">
+              <td><a href="issue3.html"><image src= "media/issue_3/playlist.jpg" class ="issue-items"><p class="issue-title">issue 3</p></a></td>
+              <td><a href="issue2.html"><image src= "media/misc/covers/issue2_cover.jpg" class ="issue-items"><p class="issue-title">issue 2</p></a></td>
+              <td><a href="issue1.html"><image src= "media/misc/covers/issue1_cover.jpg" class ="issue-items"><p class="issue-title">issue 1</p></a></td>
+            </table>
+          </div>
 
 
-<!-- Voice Notes Cloud
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="cloud">
-    <img id= "cloud" src="media/allaboutlove/8BitCloud.png">
+            
+    </div>
 </div>
 
-<div id="voicenotes">
+<div id="main">
 
+<div class="sidebar-button">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+
+<div class="w3-container">
+<!-- Voice Notes Cloud
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<div id="voicenotes">
+  <img class= "cloud" style="opacity: .6;" src="media/allaboutlove/rubberbands.jpg">
     <div id="amanda">
-      <img class ="emojis" id="amanda-emoji" src="media/allaboutlove/heart.png">
+      <img class ="emojis" id="amanda-emoji" src="media/allaboutlove/charlotte-emoji.png">
       <audio id="amanda-sound">
       <source src="audio/Amanda.mp4" type="audio/mp4">
       </audio>
     </div>
+
     <div id="lily">
-      <img class ="emojis" id="lily-emoji" src="media/allaboutlove/rainbow-01.png">
+      <img class ="emojis" id="lily-emoji" src="media/allaboutlove/lily-emoji.png">
       <audio id="lily-sound">
         <source src="audio/lily.m4a" type="audio/mp4">
       </audio>
     </div>
+
     <div id="patrick">
-      <img class ="emojis" id="patrick-emoji" src="media/allaboutlove/heart.png">
+      <img class ="emojis" id="patrick-emoji" src="media/allaboutlove/patrick-emoji.png">
       <audio id="patrick-sound">
         <source src="audio/patrick.m4a" type="audio/mp4">
       </audio>
     </div>
+
+    <div id="joe">
+      <img class ="emojis" id="joe-emoji" src="media/allaboutlove/joe-emoji.png">
+      <audio id="joe-sound">
+        <source src="audio/joe.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
+    <div id="celeste">
+      <img class ="emojis" id="celeste-emoji" src="media/allaboutlove/celeste-emoji.png">
+      <audio id="celeste-sound">
+        <source src="audio/celeste.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
+    <div id="charlotte">
+      <img class ="emojis" id="charlotte-emoji" src="media/allaboutlove/charlotte-icon.png">
+      <audio id="charlotte-sound">
+        <source src="audio/charlotte.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
+    <div id="hannah">
+      <img class ="emojis" id="hannah-emoji" src="media/allaboutlove/jenny-emoji.png">
+      <audio id="hannah-sound">
+        <source src="audio/hannah.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
+    <div id="jenny">
+      <img class ="emojis" id="jenny-emoji" src="media/allaboutlove/jenny-emoji.png">
+      <audio id="jenny-sound">
+        <source src="audio/jenny.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
+    <div id="jon">
+      <img class ="emojis" id="jon-emoji" src="media/allaboutlove/jon-emoji.png">
+      <audio id="jenny-sound">
+        <source src="audio/jenny.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
+    <div id="nabi">
+      <img class ="emojis" id="nabi-emoji" src="media/allaboutlove/nabi-emoji.png">
+      <audio id="nabi-sound">
+        <source src="audio/nabi.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
+    <div id="max">
+      <img class ="emojis" id="max-emoji" src="media/allaboutlove/max-icon.png">
+      <audio id="max-sound">
+        <source src="audio/max.m4a" type="audio/mp4">
+      </audio>
+    </div>
+
 </div>
 
  <!-- Brain Icon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="brain-icon">
-
-    <a id="trigger-bubble" onclick="var menu=document.getElementById('project-description'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}""><img src="media/allaboutlove/brain.png"></a>
-    <div id="project-description" class= "speech-bubble" style="display: none">
-      <h1> PROJECT DESCRIPTION </h1>
-      <h2>During the fall of 2017, we (Klara and Noa) were taking time off of school, living outside our home country. 
-Because of this, we didn’t have an institution to ground our learning and teaching. Many of our closest friends were far away, having different experiences. We were having lots of skype calls, and our sense of community was both online and off. We were thinking about how to maintain old connections as well as build new communities, as how to connect people from different parts of our lives. We were thinking about how to create intentional communities around central ideas, commitments, and values when people are spread across the world. </h2>
+   <div id="project-description">
+      <img id="project-image" style="opacity: 0; width: 40vw" src="media/allaboutlove/project-description.png">
 
     </div>
+
+    <a id="trigger-bubble" onclick="var menu=document.getElementById('project-image'); if(menu.style.opacity=='0'){menu.style.opacity='0.8'} else{menu.style.opacity='0'}""> <img class = "icons" src="media/allaboutlove/brain.png"></a>
+  
   </div>
 
 
@@ -98,18 +170,22 @@ Because of this, we didn’t have an institution to ground our learning and teac
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div id="book-icon">
-    <a id="trigger-content-popup" onclick="var menu=document.getElementById('draggable'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}""><img src="media/allaboutlove/book.png"></a>
-    <div id="draggable" class="content-modal ui-draggable ui-draggable-handle" style="display: none">
-      <div class="content-modal-content">
+    <a id="trigger-content-popup" onclick="var menu=document.getElementById('draggable'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}""><img class ="icons" src="media/allaboutlove/book.png"></a>
+  <div id="draggable" class="content-modal ui-draggable ui-draggable-handle" style="display: none">
+    <div class="content-modal-content">
          <a class="content-modal-close" onclick="var menu=document.getElementById('draggable'); if(menu.style.display=='block'){menu.style.display='none'}">close</a>
          <table style="width:100%">
   <tr>
-    <td>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</td>
+    <td><img id="curriculum" src="media/allaboutlove/curriculum-04.png"></td>
     <td><img id="summary" src="media/allaboutlove/textsummary.jpg"></td> 
   </tr>
    <tr>
     <td><img id="questions" src="media/allaboutlove/questions-03.png"></td>
     <td><img id="discussion" src="media/allaboutlove/discussion-01.png"></td> 
+  </tr>
+  <tr>
+    <td><a href="media/allaboutlove/textsummary.jpg" download>
+<img id="download-button" src ="media/allaboutlove/download-button-05.png"></a></td>
   </tr>
 </table>
 
@@ -122,15 +198,35 @@ Because of this, we didn’t have an institution to ground our learning and teac
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div id="arrow-icon">
-      <a id="trigger-arrow" onclick="var menu=document.getElementById('arrow-description'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}""><img src="media/allaboutlove/wavy-arrow.png"></a>
-    <div id="arrow-description" class= "speech-bubble-arrow" style="display: none">
-      <h1> PROJECT DESCRIPTION </h1>
-      <h2>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</h2>
-
+      <div style="display:none;" id="donate-section">
+      <img id="donate-text" style="width: 40vw" src="media/allaboutlove/donate.png">
+      <a href="https://www.paypal.me/OkayMagazine"><img id="donate-button" style=" width: 20vw" src="media/allaboutlove/donate-button-06.png"></a>
     </div>
+
+    <a id="trigger-arrow" onclick="var menu=document.getElementById('donate-section'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}"">  <a id="trigger-arrow" onclick="var menu=document.getElementById('donate-section'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}""> 
+     <img src="media/allaboutlove/wavy-arrow.png"></a>
       
    </div>
+</div>
 
+</div>
+
+
+
+</div>
+<script type="text/javascript">
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "18%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
 </body>
 <script type="text/javascript">
 
@@ -145,7 +241,15 @@ Because of this, we didn’t have an institution to ground our learning and teac
   var friends = {
     "amanda": document.getElementById('amanda'),
     "lily": document.getElementById('lily'),
-    "patrick": document.getElementById('patrick')
+    "patrick": document.getElementById('patrick'),
+    "nabi": document.getElementById('nabi'),
+    "jenny": document.getElementById('jenny'),
+    "jon": document.getElementById('jon'),
+    "max": document.getElementById('max'),
+    "charlotte": document.getElementById('charlotte'),
+    "hannah": document.getElementById('hannah'),
+    "celeste": document.getElementById('celeste'),
+    "joe": document.getElementById('joe')
   }
 
 
@@ -215,4 +319,5 @@ Because of this, we didn’t have an institution to ground our learning and teac
 
   
 </script>
+
 </html>
