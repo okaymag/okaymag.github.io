@@ -79,25 +79,16 @@ img.descriptions:hover {
     opacity: 1;
 }
 
-.amanda-emoji{
-	transform: translate(20vw);
-}
 
 #amanda:hover p.amanda-description{
   opacity: 1;
 }
 
-.patrick-emoji{
-	transform: rotate(32.72deg) translate(20vw) rotate(-32.72deg);
-}
 
 #patrick:hover p.patrick-description{
   opacity: 1;
 }
 
-.lily-emoji{
-	transform: rotate(65.45deg) translate(20vw) rotate(-65.45deg);
-}
 #lily:hover p.lily-description{
   opacity: 1;
 }
@@ -106,56 +97,34 @@ img.descriptions:hover {
   opacity: 1;
 }
 
-.celeste-emoji{
-    transform: rotate(98.18deg) translate(20vw) rotate(-98.18deg);
-}
-
-.charlotte-emoji{
-    transform: rotate(130.90deg) translate(20vw) rotate(-130.90deg);
-}
 
 #charlotte:hover p.charlotte-description{
   opacity: 1;
 }
 
-.hannah-emoji{
-    transform: rotate(163.63deg) translate(20vw) rotate(-163.63deg);
-}
-
-.joe-emoji{
-	transform: rotate(196.36deg) translate(20vw) rotate(-196.36deg);
-}
 #joe:hover p.joe-description{
   opacity: 1;
 }
 
-.jenny-emoji{
-    transform: rotate(229.09deg) translate(20vw) rotate(-229.09deg);
-}
 #jenny:hover p.jenny-description{
   opacity: 1;
 }
 
-.jon-emoji{
-    transform: rotate(261.81deg) translate(20vw) rotate(-261.81deg);
-}
 #jon:hover p.jon-description{
   opacity: 1;
 }
 
-.nabi-emoji{
-    transform: rotate(294.54deg) translate(20vw) rotate(-294.54deg);
-}
 #nabi:hover p.nabi-description{
   opacity: 1;
 }
 
-.max-emoji{
-    transform: rotate(327.27deg) translate(20vw) rotate(-327.27deg);
-}
-
 #max:hover p.max-description{
   opacity: 1;
+}
+
+
+#voicenotes img.emojis:hover {
+  width: 10vw;
 }
 
 #voicenotes img.emojis{
@@ -175,12 +144,9 @@ img.descriptions:hover {
 
 }
 
-#voicenotes img.emojis:hover {
-	width: 10vw;
-}
 
 /* description frames formatting
-__________________________________________________*/
+__________________________________________________
 p.descriptions {
   position: absolute;
   margin: auto;
@@ -194,13 +160,30 @@ p.descriptions {
   -o-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
   z-index: 300;
-  font-family: "shrikhand";
+  font-family: 'EB Garamond', serif;
   font-style: italic;
-  font-size: 40px;
+  font-size: 4vw;
+}*/
 
+.description-table {
+  position: absolute;
+  z-index: 300;
+  height: 70%;
+  top: 15%;
+  width: 20vw;
+  left: 20%;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;    
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3.3vw;
 
 }
-
 
 
 

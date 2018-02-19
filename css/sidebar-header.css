@@ -5,9 +5,16 @@ body {
     margin: 0;
 }
 #header {
+    position: fixed;
+    left: 35vw;
+    top: 0;
     display: block;
     margin: auto;
     height: 6vh;
+}
+
+#header-img {
+  height: 6vh;
 }
 #sidebar {
     background-color: #fff;

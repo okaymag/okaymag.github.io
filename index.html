@@ -1,74 +1,382 @@
 <!DOCTYPE html>
-<html>
-<title>
-  OKAY MAG
-</title>
-
-
+<html lang="en">
 <head>
-  <link rel="icon" href="icon.png">
-  <link rel="stylesheet" type="text/css" href="issue2.css">
-  <link rel="stylesheet" type="text/css" href="css/sidebar-header.css">
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Okay Mag: all about love</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="css/allaboutlove.css">
+
+
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="script/draggable.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../../dist/images/favicon.png">
+
 </head>
+
 <body>
-  <div id="header"><center><a href="index.html"><img src="media/allaboutlove/okaymagtitle-06.jpg" height="50"></a></center></div>
-<div id="parent">
-    <div id="sidebar">
-            <p class="sidebarItem"><a href="index.html">HOME</a></a><br>
-            <p class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">INSTA</a></a><br>
-              <!--modal-->
-
-            <p class="sidebarItem"><a id="issues-button" onclick="var menu=document.getElementById('issues-menu');if(menu.style.maxHeight=='200px'){menu.style.maxHeight=0} else{menu.style.maxHeight='200px'}">ISSUES</a></p>
-          <div id="issues-menu">
-            <table width="100%" id="issue-items">
-              <td><a href="issue3.html"><image src= "media/issue_3/playlist.jpg" class ="issue-items"><p class="issue-title">issue 3</p></a></td>
-              <td><a href="issue2.html"><image src= "media/misc/covers/issue2_cover.jpg" class ="issue-items"><p class="issue-title">issue 2</p></a></td>
-              <td><a href="issue1.html"><image src= "media/misc/covers/issue1_cover.jpg" class ="issue-items"><p class="issue-title">issue 1</p></a></td>
-            </table>
-          </div>
-            
-    </div>
-
-<table width="100%">
-
-   <td>
-      <div class="timer-container">
-         <img src="media/allaboutlove/bell hooks splash page-01.png" width="100%" height="100%" id="splash"></div>
-      <div class= "timer">
-<p id="demo"><p>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 17, 2018 17:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script></div></td>
-</table>
+<!-- Header
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="header" class="w3-container">
+  <a href="allaboutlove.html"><img id="banner" src="media/misc/banner.svg"></a>
 </div>
 
-<!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+<div id="placard">
+  <img id = "title-placard" src="media/allaboutlove/description.png">
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-button w3-large"
+          onclick="w3_close()"> &times;</button>
+  <div id="sidebar-allaboutlove">
+    <p class="sidebarItem"><a href="splash.html">HOME</a></a><br>
+    <p class="sidebarItem"><a href="https://instagram.com/okaymag/"target="_blank">INSTA</a></a><br>
+      <!--modal-->
+
+    <p class="sidebarItem"><a id="issues-button" onclick="var menu=document.getElementById('issues-menu');if(menu.style.maxHeight=='200px'){menu.style.maxHeight=0} else{menu.style.maxHeight='200px'}">ISSUES</a></p>
+    <div id="issues-menu">
+      <table width="100%" id="issue-items">
+        <td><a href="issue3.html"><image src= "media/issue_3/playlist.jpg" class ="issue-items"><p class="issue-title">issue 3</p></a></td>
+        <td><a href="issue2.html"><image src= "media/misc/covers/issue2_cover.jpg" class ="issue-items"><p class="issue-title">issue 2</p></a></td>
+        <td><a href="issue1.html"><image src= "media/misc/covers/issue1_cover.jpg" class ="issue-items"><p class="issue-title">issue 1</p></a></td>
+      </table>
+    </div>
+
+
+
+  </div>
+</div>
+
+<div id="main">
+
+  <div class="sidebar-button">
+    <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+  </div>
+
+  <div class="w3-container">
+    <!-- Voice Notes Cloud
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <div class="voicenotes" id="voicenotes">
+      <div class="description-table" id="description-table" style="display: table; ">
+        <div style="display: table-cell; vertical-align: middle;">
+          <div id="voice-description" style="text-align: center;"></div>
+        </div>
+      </div>
+
+      <img class= "cloud" id="cloud" style="opacity: 0.6" src="media/allaboutlove/Rubberbandball.png">
+      <div id="amanda">
+        <img class ="emojis amanda-emoji" id="amanda-emoji" src="media/allaboutlove/Amanda-Emoji.png">
+        <audio id="amanda-sound">
+          <source src="audio/Amanda.mp4" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="lily" class="friend">
+        <img class ="emojis lily-emoji" id="lily-emoji" src="media/allaboutlove/Lily-Emoji.png">
+        <audio id="lily-sound">
+          <source src="audio/lily.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="patrick" class="friend">
+        <img class ="emojis patrick-emoji" id="patrick-emoji" src="media/allaboutlove/patrick.emoji.png">
+        <audio id="patrick-sound">
+          <source src="audio/patrick.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="joe" class="friend">
+        <img class ="emojis joe-emoji" id="joe-emoji" src="media/allaboutlove/joe-emoji.png">
+        <audio id="joe-sound">
+          <source src="audio/joe.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="celeste" class="friend">
+        <img class ="emojis celeste-emoji" id="celeste-emoji" src="media/allaboutlove/celeste-emoji.png">
+        <audio id="celeste-sound">
+          <source src="audio/celeste.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="charlotte" class="friend">
+        <img class ="emojis charlotte-emoji" id="charlotte-emoji" src="media/allaboutlove/charlotte-icon.png">
+        <audio id="charlotte-sound">
+          <source src="audio/charlotte.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="hannah" class="friend">
+        <img class ="emojis hannah-emoji" id="hannah-emoji" src="media/allaboutlove/hannah-emoji.png">
+        <audio id="hannah-sound">
+          <source src="audio/hannah.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="jenny" class="friend">
+        <img class ="emojis jenny-emoji" id="jenny-emoji" src="media/allaboutlove/jenny-emoji.png">
+        <audio id="jenny-sound">
+          <source src="audio/jenny.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="jon" class="friend">
+        <img class ="emojis jon-emoji" id="jon-emoji" src="media/allaboutlove/jon-emoji.png">
+        <audio id="jenny-sound">
+          <source src="audio/jon.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="nabi" class="friend">
+        <img class ="emojis nabi-emoji" id="nabi-emoji" src="media/allaboutlove/nabi-emoji.png">
+        <audio id="nabi-sound">
+          <source src="audio/nabi.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+      <div id="max" class="friend">
+        <img class ="emojis max-emoji" id="max-emoji" src="media/allaboutlove/max-icon.png">
+        <audio id="max-sound">
+          <source src="audio/max.m4a" type="audio/mp4">
+        </audio>
+      </div>
+
+    </div>
+
+    <!--brain-book-arrow-toolbar-->
+
+    <div class="right-toolbar" id="brain-book-arrow-toolbar">
+        <!-- Brain Icon
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="brain-icon">
+
+          <a id="trigger-bubble" onclick="var menu=document.getElementById('project-description'); if(menu.style.opacity=='0'){menu.style.opacity='0.8'; menu.style.visibility = 'visible'} else{menu.style.opacity='0'; menu.style.visibility = 'hidden'}""> <img class = "icons" src="media/allaboutlove/brain.png"></a>
+
+        </div>
+
+
+        <!-- Book Icon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <div id="book-icon">
+          <a id="trigger-content-popup" onclick="var menu=document.getElementById('draggable'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}""><img class ="icons" src="media/allaboutlove/book.png"></a>
+          <div id="draggable" class="content-modal ui-draggable ui-draggable-handle" style="display: none">
+            <div class="content-modal-content">
+              <a class="content-modal-close" onclick="var menu=document.getElementById('draggable'); if(menu.style.display=='block'){menu.style.display='none'}">close</a>
+              <table style="width:100%">
+                <tr>
+                  <td><a href="media/allaboutlove_curriculum.zip" download><img id="curriculum" src="media/allaboutlove/curriculum-07.svg"></a></td>
+                  <td><img id="summary" src="media/allaboutlove/textsummary.jpg"></td>
+                </tr>
+                <tr>
+                  <td><img id="questions" src="media/allaboutlove/questions-03.png"></td>
+                  <td><img id="discussion" src="media/allaboutlove/discussion-01.png"></td>
+                </tr>
+                
+              </table>
+              <img id="conversations" src ="media/allaboutlove/conversations.jpg"></a>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Arrow Icon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <div id="arrow-icon">
+
+
+         <a id="trigger-bubble" onclick="var menu=document.getElementById('donate-section'); if(menu.style.opacity=='0'){menu.style.opacity='1.0'; menu.style.visibility = 'visible'} else{menu.style.opacity='0'; menu.style.visibility = 'hidden'}"">
+          <img src="media/allaboutlove/wavy-arrow.png"></a>
+
+        </div>
+
+    </div>
+
+    <!--popups from brain-book-arrow-toolbar-->
+    <div id="project-description" style="visibility: hidden; opacity: 0.0">
+      <img id="project-image" src="media/allaboutlove/about.svg">
+
+    </div>
+
+    <div id="donate-section" style="visibility: hidden; opacity: 0.0;">
+      <a href="https://www.paypal.me/OkayMagazine"><img id="donate-button" src="media/allaboutlove/support-button-06.svg"></a>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+</div>
+<script type="text/javascript">
+function w3_open() {
+  //document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "18%";
+  document.getElementById("mySidebar").style.display = "block";
+  //document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
 </body>
+<script type="text/javascript">
+
+
+  //manually adjust volume of some sounds
+  document.getElementById("lily-sound").volume = .3
+
+
+  var currentAudio;
+  var currentFriend;
+
+
+  //dictionary of voices.  keys are names of friends, values are divs containing an emoji and audio file for each friend.
+
+  ////////////////IMPORTANT///////////
+  //the order of elements will define the order of voices around the circle.  The first friend
+  //in the dictionary will be at the far right of the circle (0 degrees) and the rest follow clockwise.
+  //The rotational increment is 360 / (number of friends) degrees
+
+  var friends = {
+    "amanda": document.getElementById('amanda'),
+    "max": document.getElementById('max'),
+    "patrick": document.getElementById('patrick'),
+    "hannah": document.getElementById('hannah'),
+    "jenny": document.getElementById('jenny'),
+    "jon": document.getElementById('jon'),
+    "lily": document.getElementById('lily'),
+    "charlotte": document.getElementById('charlotte'),
+    "nabi": document.getElementById('nabi'),
+    "celeste": document.getElementById('celeste'),
+    "joe": document.getElementById('joe')
+  }
+
+  var friendsDescriptions = {
+    "amanda": 'RIGOROUS LOVE',
+    "max": 'POSITIVE MASCULINITY',
+    "patrick": 'COLLABORATIVE STORYTELLING',
+    "hannah": 'AFFIRMATIONS',
+    "jenny": 'DIFFERING CULTURAL EXPRESSIONS',
+    "jon": 'FURTHER EXPLORATIONS OF BELL HOOKS',
+    "lily": 'THE CALL TO RISE',
+    "charlotte": 'BUILDING INTENTIONAL ONLINE SPACES',
+    "nabi": "MUSIC IS LOVE",
+    "celeste": "UNPACKING PARENTS' RELATIONSHIPS",
+    "joe": 'LABOR OF LOVE IN CAPITALISM'
+  }
+
+
+  //helper functions
+  var makeOpaque = function(name) {
+    var div = friends[name];
+    var currentEmoji = div.getElementsByTagName('img')[0];
+    currentEmoji.style.opacity = 1;
+  }
+  var makeTransparent = function(name) {
+    var div = friends[name];
+    var currentEmoji = div.getElementsByTagName('img')[0];
+    currentEmoji.style.opacity = .5;
+  }    
+
+
+
+  //function to be triggered on each friend div click.  
+
+  var triggerAudio = function(name){
+
+    //already listening to this friend, so pause.  Now currentFriend is undefined, back to initial state.  
+    if (currentFriend == name) {
+      currentAudio.pause();
+      currentFriend = undefined;
+      currentAudio = undefined;
+
+      //restore friend emojis to default opacity.
+      for(friend in friends) {
+        makeOpaque(friend)
+      }
+
+      return;
+    }
+
+
+    //Otherwise pause currentFriend and move to new Friend (name)
+    //if no audio defined yet, ignore.  Else pause current audio.
+    if (currentAudio){currentAudio.pause()};
+
+    var div = friends[name];
+    currentAudio = div.getElementsByTagName('audio')[0];
+    currentFriend = name;
+    for(friend in friends) {
+      if(friend !== currentFriend){
+        makeTransparent(friend);
+      }
+    }
+    makeOpaque(currentFriend);
+
+    console.log(currentAudio);
+    console.log(name);
+
+    //play current friend from the beginning
+    currentAudio.currentTime = 0;
+    currentAudio.play();
+  }
+
+
+  var emojiMouseOver = function(friend) {
+        document.getElementById('description-table').style.opacity=1;
+        document.getElementById('voice-description').innerHTML=friendsDescriptions[friend];
+  }
+
+
+
+
+
+  var rotationUnit = Math.round(360 / Object.keys(friends).length,4);
+  var friendCount = 0
+  for(friend in friends) {
+      //set the onclick event for each friend div, which will handle switching the current audio and opacity of images
+      friends[friend].onclick = triggerAudio.bind(null, friend);
+      var currentEmoji = friends[friend].getElementsByTagName('img')[0];
+      var rotation = rotationUnit * friendCount;
+      currentEmoji.style.transform = 'rotate(' + rotation + 'deg) translate(20vw) rotate(-' + rotation + 'deg)';
+      friendCount += 1;
+
+      currentEmoji.addEventListener('mouseover', emojiMouseOver.bind(null, friend));
+
+      currentEmoji.addEventListener('mouseleave', function(){
+        document.getElementById('description-table').style.opacity=0;
+      })
+  }
+  friends = friends;
+
+  
+</script>
+
 </html>
