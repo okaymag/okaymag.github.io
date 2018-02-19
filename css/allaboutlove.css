@@ -27,76 +27,129 @@ body {
 	cursor: pointer;
 }
 
+
+
 /* voicenote icon formatting
 __________________________________________________*/
 
 
-#voicenotes {
+.voicenotes {
 	position: relative;
-	width: 24em;
-	height: 24em;
-	border: dashed 1px;
+  width: 40vw;
+	height: 40vw;
 	border-radius: 50%;
-	margin: 1.75em auto 0;
+	margin: 6.00vw auto 0;
 }
 
-#voicenotes img{
+.voicenotes img:not(.cloud){
 	display: block;
-	margin: -2em;
+	margin: -4vw;
 	position: absolute;
 	top:50%;
 	left: 50%
 }
 
-#voicenotes img#amanda-emoji{
-	transform: translate(12em);
-}
+
 
 .cloud{
-	margin-left: auto;
-	margin-top:auto;
-	position: absolute;
+  position: absolute;
 	width: 100%;
+	left: 0;
+	right: 0
 }
 
-#patrick-emoji{
-	transform: rotate(45deg) translate(12em) rotate(-45deg);
+img.descriptions{
+    width: 15vw;
+    opacity: 0;
+    z-index: 200;
+    	-webkit-transition: opacity .5s ease-in-out;
+      	-moz-transition: opacity .5s ease-in-out;
+      	-ms-transition: opacity .5s ease-in-out;
+      	-o-transition: opacity .5s ease-in-out;
+      	transition: opacity .5s ease-in-out;
 }
 
-#lily-emoji{
-	transform: rotate(135deg) translate(12em) rotate(-135deg);
+img.descriptions:hover {
+    opacity: 1;
 }
 
-#joe-emoji{
-	transform: translate(-12em);
+.amanda-emoji{
+	transform: translate(20vw);
 }
 
-#celeste-emoji{
-
+#amanda:hover p.amanda-description{
+  opacity: 1;
 }
 
-#voicenotes img#charlotte-emoji{
-
+.patrick-emoji{
+	transform: rotate(32.72deg) translate(20vw) rotate(-32.72deg);
 }
 
-#voicenotes img#hannah-emoji{
-
+#patrick:hover p.patrick-description{
+  opacity: 1;
 }
 
-#voicenotes img#jenny-emoji{
-
+.lily-emoji{
+	transform: rotate(65.45deg) translate(20vw) rotate(-65.45deg);
+}
+#lily:hover p.lily-description{
+  opacity: 1;
 }
 
-#voicenotes img#jon-emoji{
-
+#celeste:hover p.celeste-description{
+  opacity: 1;
 }
 
-#voicenotes img#nabi-emoji{
-
+.celeste-emoji{
+    transform: rotate(98.18deg) translate(20vw) rotate(-98.18deg);
 }
 
-#voicenotes img#max-emoji{
+.charlotte-emoji{
+    transform: rotate(130.90deg) translate(20vw) rotate(-130.90deg);
+}
 
+#charlotte:hover p.charlotte-description{
+  opacity: 1;
+}
+
+.hannah-emoji{
+    transform: rotate(163.63deg) translate(20vw) rotate(-163.63deg);
+}
+
+.joe-emoji{
+	transform: rotate(196.36deg) translate(20vw) rotate(-196.36deg);
+}
+#joe:hover p.joe-description{
+  opacity: 1;
+}
+
+.jenny-emoji{
+    transform: rotate(229.09deg) translate(20vw) rotate(-229.09deg);
+}
+#jenny:hover p.jenny-description{
+  opacity: 1;
+}
+
+.jon-emoji{
+    transform: rotate(261.81deg) translate(20vw) rotate(-261.81deg);
+}
+#jon:hover p.jon-description{
+  opacity: 1;
+}
+
+.nabi-emoji{
+    transform: rotate(294.54deg) translate(20vw) rotate(-294.54deg);
+}
+#nabi:hover p.nabi-description{
+  opacity: 1;
+}
+
+.max-emoji{
+    transform: rotate(327.27deg) translate(20vw) rotate(-327.27deg);
+}
+
+#max:hover p.max-description{
+  opacity: 1;
 }
 
 #voicenotes img.emojis{
@@ -122,44 +175,110 @@ __________________________________________________*/
 
 /* description frames formatting
 __________________________________________________*/
-#description-amanda {
+p.descriptions {
+  position: absolute;
+  margin: auto;
+  left: 10vw;
+  top: 15vh;
 	width:10vw;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;    
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  z-index: 300;
+  font-family: "georgia";
+  font-style: italic;
+  font-size: 40px;
+
 
 }
+
 
 
 
 /* bottom icon positions 
 __________________________________________________*/
 
+
 #icons {
 	width: 100%;
 }
 
-#brain-icon {
-    position: fixed;
-    top: 12vh;
-    left: 0px;
-    bottom: 0px;
-    width: 33vw;
-    text-align: center;
+
+/*bottom toolbar (with brain, book, arrow icons)
+__________________________________________________*/
+
+
+.right-toolbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20vw;
+    overflow: hidden;
 }
 
-#project-image{
-  	-webkit-transition: opacity 2s ease-in-out;
-  	-moz-transition: opacity 2s ease-in-out;
-  	-ms-transition: opacity 2s ease-in-out;
-  	-o-transition: opacity 2s ease-in-out;
-  	transition: opacity 2s ease-in-out;
+#brain-icon {
+    position: absolute;
+    width: 33vw;
+    top: 0%;
+    margin: 0 0 0 5vw;
+}
+
+#book-icon {
+    position: absolute;
+    width: 33vw;
+    top: 35%;
+    margin: 0 0 0 5vw;
+}
+
+#arrow-icon {
+    position: absolute;
+    width: 33vw;
+    top: 70%;
+    margin: 0 0 0 5vw;
+}
+
+
+#project-description{
+    position: absolute;
+    margin-left: 40vw;
+    top: 10%;
+    z-index: 200;
+}
+
+#project-image {
+    width: 40vw;
+}
+
+#project-description{
+  	-webkit-transition: visibility 0s ease-in-out 0s, opacity 2s ease-in-out;
+  	-moz-transition: visibility 0s ease-in-out 0s, opacity 2s ease-in-out;
+  	-ms-transition: visibility 0s ease-in-out 0s, opacity 2s ease-in-out;
+  	-o-transition: visibility 0s ease-in-out 0s, opacity 2s ease-in-out;
+  	transition: visibility 0s ease-in-out 0s, opacity 2s ease-in-out;
+}
+
+#donate-section {
+    position: absolute;
+    margin-left: 10vw;
+    top: 10%;
+    z-index: 200;
+}
+
+#donate-text {
+    width: 40vw;
 }
 
 #brain-icon img{
-	width: 15vw;
+	width: 10vw;
 }
 
 #brain-icon img:hover{
 
-	width: 17vw;
+	width: 11vw;
   	-webkit-transition: width .5s ease-in-out;
   	-moz-transition: width .5s ease-in-out;
   	-ms-transition: width .5s ease-in-out;
@@ -167,22 +286,14 @@ __________________________________________________*/
   	transition: width .5s ease-in-out;
 }
 
-#book-icon {
-	position: fixed;
-    top: 75vh;
-    left: 33vw;
-    bottom: 0px;
-    width: 33vw;
-    text-align: center;
-}
 
 
 #book-icon img[src="media/allaboutlove/book.png"]{
-	width: 12vw;
+	width: 10vw;
 }
 
 #book-icon img[src="media/allaboutlove/book.png"]:hover{
-	width: 14vw;
+	width: 11vw;
   	-webkit-transition: width .5s ease-in-out;
   	-moz-transition: width .5s ease-in-out;
   	-ms-transition: width .5s ease-in-out;
@@ -190,20 +301,13 @@ __________________________________________________*/
   	transition: width .5s ease-in-out;
 }
 
-#arrow-icon {
-	position: fixed;
-    left: 66vw;
-    bottom: 10vh;
-    width: 33vw;
-    text-align: center;
-}
 
 #arrow-icon img{
-	width: 20vw;
+	width: 11vw;
 }
 
 #arrow-icon img:hover{
-	width: 22vw;
+	width: 12vw;
   	-webkit-transition: width .5s ease-in-out;
   	-moz-transition: width .5s ease-in-out;
   	-ms-transition: width .5s ease-in-out;
@@ -496,7 +600,11 @@ a.resource-modal-close {
 /* w3 formatting
 __________________________________________________*/
 
-.w3-container{padding:0.01em 16px}
+.w3-container{
+    padding:0.01em 16px;
+    position: relative;
+}
+
 .w3-container:after,.w3-container:before{content:"";display:table;clear:both}
 
 .w3-button{
@@ -556,7 +664,7 @@ __________________________________________________*/
 @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}}
 
-.w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto; top: 0}
 
 .w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 
@@ -565,6 +673,12 @@ __________________________________________________*/
 
 .w3-large{font-size:18px!important}
 .w3-xlarge{font-size:24px!important}
+
+#openNav{
+    position: fixed;
+    top: 0;
+    left:0;
+}
 
 /* Sidebar
 __________________________________________________*/
