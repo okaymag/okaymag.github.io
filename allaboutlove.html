@@ -25,6 +25,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="script/draggable.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,7 +37,11 @@
 <!-- Header
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="header" class="w3-container">
-  <a href="allaboutlove.html"><img src="media/misc/banner.png" height="50"></a>
+  <a href="allaboutlove.html"><img id="banner" src="media/misc/banner.svg"></a>
+</div>
+
+<div id="placard">
+  <img id = "title-placard" src="media/allaboutlove/description.png">
 </div>
 
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
@@ -74,9 +79,9 @@
 
     <div class="voicenotes" id="voicenotes">
 
-      <img class= "cloud" id="cloud" style="opacity: 0.6" src="media/allaboutlove/rubberbands.jpg">
+      <img class= "cloud" id="cloud" style="opacity: 0.6" src="media/allaboutlove/Rubberbandball.png">
       <div id="amanda">
-        <p class="descriptions amanda-description">RIGOROUS LOVE</p>
+        <p class="descriptions amanda-description">Rigorous Love</p>
         <img class ="emojis amanda-emoji" id="amanda-emoji" src="media/allaboutlove/charlotte-emoji.png">
         <img class="descriptions amanda-description" src="media/allaboutlove/description.png">
         <audio id="amanda-sound">
@@ -85,15 +90,15 @@
       </div>
 
       <div id="lily" class="friend">
-        <img class ="emojis lily-emoji" id="lily-emoji" src="media/allaboutlove/lily-emoji.png">
-        <p class="descriptions lily-description">the call to rise</p>
+        <img class ="emojis lily-emoji" id="lily-emoji" src="media/allaboutlove/Lily-Emoji.png">
+        <p class="descriptions lily-description">THE CALL TO RISE</p>
         <audio id="lily-sound">
           <source src="audio/lily.m4a" type="audio/mp4">
         </audio>
       </div>
 
       <div id="patrick" class="friend">
-        <img class ="emojis patrick-emoji" id="patrick-emoji" src="media/allaboutlove/patrick-emoji.png">
+        <img class ="emojis patrick-emoji" id="patrick-emoji" src="media/allaboutlove/patrick.emoji.png">
         <p class="descriptions patrick-description">collaborative storytelling: young people define love together</p>
         <audio id="patrick-sound">
           <source src="audio/patrick.m4a" type="audio/mp4">
@@ -157,7 +162,7 @@
 
       <div id="max" class="friend">
         <img class ="emojis max-emoji" id="max-emoji" src="media/allaboutlove/max-icon.png">
-        <p class="descriptions max-description">positive masculinity</p>
+        <p class="descriptions max-description">POSITIVE MASCULINITY</p>
         <audio id="max-sound">
           <source src="audio/max.m4a" type="audio/mp4">
         </audio>
@@ -187,18 +192,16 @@
               <a class="content-modal-close" onclick="var menu=document.getElementById('draggable'); if(menu.style.display=='block'){menu.style.display='none'}">close</a>
               <table style="width:100%">
                 <tr>
-                  <td><img id="curriculum" src="media/allaboutlove/curriculum-04.png"></td>
+                  <td><a href="media/allaboutlove_curriculum.zip" download><img id="curriculum" src="media/allaboutlove/curriculum-07.svg"></a></td>
                   <td><img id="summary" src="media/allaboutlove/textsummary.jpg"></td>
                 </tr>
                 <tr>
                   <td><img id="questions" src="media/allaboutlove/questions-03.png"></td>
                   <td><img id="discussion" src="media/allaboutlove/discussion-01.png"></td>
                 </tr>
-                <tr>
-                  <td><a href="media/allaboutlove/textsummary.jpg" download>
-                    <img id="download-button" src ="media/allaboutlove/download-button-05.png"></a></td>
-                </tr>
+                
               </table>
+              <img id="conversations" src ="media/allaboutlove/conversations.jpg"></a>
 
             </div>
           </div>
@@ -211,22 +214,21 @@
         <div id="arrow-icon">
 
 
-          <a id="trigger-arrow" onclick="var menu=document.getElementById('donate-section'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}"">  <a id="trigger-arrow" onclick="var menu=document.getElementById('donate-section'); if(menu.style.display=='none'){menu.style.display='block'} else{menu.style.display='none'}"">
+         <a id="trigger-bubble" onclick="var menu=document.getElementById('donate-section'); if(menu.style.opacity=='0'){menu.style.opacity='1.0'; menu.style.visibility = 'visible'} else{menu.style.opacity='0'; menu.style.visibility = 'hidden'}"">
           <img src="media/allaboutlove/wavy-arrow.png"></a>
 
         </div>
 
     </div>
 
-    <!--popups from brain-book-arrow-toolbar------->
+    <!--popups from brain-book-arrow-toolbar-->
     <div id="project-description" style="visibility: hidden; opacity: 0.0">
-      <img id="project-image" src="media/allaboutlove/project-description.png">
+      <img id="project-image" src="media/allaboutlove/about.svg">
 
     </div>
 
-    <div id="donate-section" style="display: none;">
-      <img id="donate-text" style="width: 40vw" src="media/allaboutlove/donate.png">
-      <a href="https://www.paypal.me/OkayMagazine"><img id="donate-button" style=" width: 20vw" src="media/allaboutlove/donate-button-06.png"></a>
+    <div id="donate-section" style="visibility: hidden; opacity: 0.0;">
+      <a href="https://www.paypal.me/OkayMagazine"><img id="donate-button" src="media/allaboutlove/support-button-06.svg"></a>
     </div>
 
 
