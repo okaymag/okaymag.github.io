@@ -8,6 +8,7 @@
   <title>Okay Mag: all about love</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" href="icon.png">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -18,6 +19,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <link rel="stylesheet" href="css/allaboutlove.css">
+
 
 
 
@@ -308,11 +310,11 @@ function w3_close() {
 
 
   //function to be triggered on each friend div click.  
-
+  var playPromise;
   var triggerAudio = function(name){
 
     //already listening to this friend, so pause.  Now currentFriend is undefined, back to initial state.  
-    if (currentFriend == name) {
+    if (currentFriend == name && playPromise) {
       currentAudio.pause();
       currentFriend = undefined;
       currentAudio = undefined;
@@ -328,7 +330,7 @@ function w3_close() {
 
     //Otherwise pause currentFriend and move to new Friend (name)
     //if no audio defined yet, ignore.  Else pause current audio.
-    if (currentAudio){currentAudio.pause()};
+    if (currentAudio && playPromise){currentAudio.pause()};
 
     var div = friends[name];
     currentAudio = div.getElementsByTagName('audio')[0];
@@ -345,7 +347,7 @@ function w3_close() {
 
     //play current friend from the beginning
     currentAudio.currentTime = 0;
-    currentAudio.play();
+    playPromise = currentAudio.play();
   }
 
 
