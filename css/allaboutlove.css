@@ -33,6 +33,11 @@ body {
   left: 5vw;
 }
 
+#nabi-song {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 
 /* voicenote icon formatting
